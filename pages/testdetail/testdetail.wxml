@@ -1,0 +1,5 @@
+<view style="width:100%;height:{{windowHeight}}px"> 
+   <video  src="{{url}}" id='myVideo'   object-fit="fill" autoplay="true" loop="true" style="height:{{windowHeight}}px">
+      <button open-type="share"  size="mini" style="width: 60px;height: 60px;position: fixed;bottom: 50px;right: 10px;border-radius:50%;line-height:60px;background-image:url('../../image/wx.png');background-size:100% 100%;"></button>
+</video>
+</view>

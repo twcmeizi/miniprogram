@@ -1,0 +1,24 @@
+<view class="t">
+  <mp-tabs tabs="{{tabs}}" contentlist="{{contentlist}}" activeTab="{{activeTab}}"        swiperClass="weui-tabs-swiper" activeClass="tab-bar-title__selected"
+    bindtabclick="onTabCLick" bindchange="onChange" >
+    <block wx:for="{{tabs}}" wx:key="title">
+      <!-- 该内容插入到tabs的slot中 -->
+      <view class="tab-content" slot="tab-content-{{index}}">
+        <scroll-view scroll-y="true" style="height:{{ windowHeight}}px;width:100%; " >
+          <!-- bindscrolltolower="refresh" -->
+          <block wx:for="{{contentList}}" wx:key="index">
+            <view class="tab-content-item">
+              <image src="{{item.thumbnail}}" bindtap="gotoDetail" data-sid="{{item.sid}}">
+                <view class="title">{{item.text}}</view>
+                <view class="image_box" style="left:{{left}}px">
+                  <image class="playIcon" src="../../image/play.png"></image>
+                </view>
+              </image>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+    <!-- 该内容插入到tabs的slot中 -->
+    </block>
+  </mp-tabs>
+</view>
