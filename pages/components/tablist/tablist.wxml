@@ -1,0 +1,45 @@
+<view class="header" style="height:{{navHeight}}px;">
+   <scroll-view scroll-x="true">
+      <view class="itembox" style="position:relative;top:{{navTop}}px;">
+         <block wx:for="{{tabs}}">
+            <view class="tab" bindtap="changeCurrent" data-currentId="{{index}}">
+               <text class=" {{currentid == index ? 'tab-select':''}}">{{item}}</text>
+            </view>
+         </block>
+      </view>
+   </scroll-view>
+</view>
+<view class="content">
+   <swiper current="{{currentid}}" bindchange="changeSwiper" style="height:{{sheight}}px;">
+      <swiper-item wx:for="{{tabs}}">
+         <view class="item">
+               <!-- <view class="item_header"></view> -->
+               <view class="item_content">
+                  <video src="{{contentList.video}}" show-play-btn="false" show-center-play-btn="true" controls autoplay="true" loop="true" poster="{{contentList.thumbnail}}" object-fit="fill"></video>
+               </view>
+               <view class="item_footer">
+                  <view class="item_footer_item">
+                     <text>@{{contentList.name}}</text>
+                  </view>
+                  {{contentList.text}}
+               </view>
+               <view class="item_icon">
+                  <div class="icon">
+                     <image src="../../../image/wx.png"> </image>
+                  </div>
+                  <div class="icon">
+                     <image src="../../../image/aixin.png"> </image>
+                  </div>
+                  <div class="icon">
+                     <image src="../../../image/pinglun.png"> </image>
+                  </div>
+                  <div class="icon">
+                     <image src="../../../image/zhuanfa.png"> </image>
+                  </div>
+         </view>
+         </view>
+        
+      </swiper-item>
+   </swiper>
+
+</view>

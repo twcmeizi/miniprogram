@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "navigatar":"../components/tablist/tablist"
+  },
+  "navigationBarBackgroundColor": "#000000",
+  "navigationStyle": "custom"
 }

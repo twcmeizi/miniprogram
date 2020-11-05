@@ -131,6 +131,7 @@ Component({
     },
     observers: {
         activeTab: function activeTab(_activeTab) {
+            console.log(_activeTab);
             var len = this.data.tabs.length;
             if (len === 0) return;
             var currentView = _activeTab - 1;

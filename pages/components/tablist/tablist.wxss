@@ -1,0 +1,95 @@
+.header {
+   width: 100%;
+   color: white;
+   background: black;
+   box-sizing: border-box;
+}
+
+scroll-view {
+   height: 100%;
+}
+
+.itembox {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+   box-sizing: border-box;
+}
+
+.tab {
+   width: 50px;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+.tab-select {
+   border-bottom: 2px solid white;
+}
+
+.item {
+   width: 100%;
+   height: 100%;
+}
+
+.item_header {
+   width: 100%;
+   height: 15%;
+   border: 1px solid red;
+}
+
+.item_content {
+   width: 100%;
+   height: 100%;
+   /* border: 1px solid bisque; */
+}
+
+video {
+   width: 100%;
+   height: 100%;
+}
+
+.item_footer {
+   width: 100%;
+   
+  position: absolute;
+  bottom: 50px;
+  /* left: 20px; */
+  color: white;
+  font-size: 16px;
+  /* margin: 10px; */
+   box-sizing: border-box;
+   padding-left: 10px;
+}
+.item_footer_item{
+   font-size: 24px; 
+ 
+   word-wrap: break-word;
+   white-space:normal;
+   word-break: break-all;
+}
+
+
+.item_icon {
+   width: 80px;
+   height: 70%;
+   position: fixed;
+   bottom: 20%;
+   right: 5px;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   /* border: 1px solid red; */
+}
+
+.icon {
+   width: 100%;
+   height: 80px;
+   /* border: 1px solid black; */
+}
+
+.icon>image {
+   width: 60px;
+   height: 60px;
+   padding: 10px;
+
+}
